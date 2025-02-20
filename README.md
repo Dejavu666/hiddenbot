@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/php-5-green.svg">
 </p>
 
-1️⃣ Buat file /usr/local/bin/dockerbot
+1️⃣ Buat file /tmp/img/dockerbot
 
 Isi dengan:
 ```
