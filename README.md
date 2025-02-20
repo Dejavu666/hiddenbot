@@ -1,4 +1,4 @@
-# hidden bot Wrapper Script
+# hidden bot Wrapper Script v1.0
 
 
 </h1>
