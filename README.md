@@ -29,6 +29,8 @@ chmod 777 /tmp/img/dockerbot
 bash /tmp/img/dockerbot
 ```
 
+
+```
 apasaja yg bisa di jalankan di bot telegram 
 
 perintah Linux apa saja, termasuk:
