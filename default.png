@@ -4,9 +4,9 @@
 cd "$(dirname "$0")" || exit
 
 # Konfigurasi
-BOT_TOKEN="7987285255:AAEP_NXmRlE-Zoipo0V7PQ4gOWfj-6eFzuY"
-CHAT_ID="-4619234228"
-HOSTNAME="xuilongoutdoor"  # Ubah sesuai kebutuhan
+BOT_TOKEN="0000000000000000000000000000000000000"
+CHAT_ID="-000000000"
+HOSTNAME="namawebnya"  # Ubah sesuai kebutuhan
 PID_FILE="/tmp/bot_cmd.pid"
 SCRIPT_PATH="$(realpath "$0")"
 OFFSET_FILE="/tmp/bot_offset.txt"
