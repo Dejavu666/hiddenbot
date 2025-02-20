@@ -10,8 +10,7 @@
     <img src="https://img.shields.io/badge/php-7-green.svg">
     <img src="https://img.shields.io/badge/php-5-green.svg">
 </p>
-📌 Konsep Wrapper Script dalam Eksekusi Bot Telegram
-Wrapper Script adalah skrip perantara yang digunakan untuk menjalankan program atau skrip lain secara tidak langsung. Ini berguna untuk menyembunyikan, menyederhanakan, atau mengontrol eksekusi skrip utama.
+📌 Konsep Wrapper Script dalam Eksekusi Bot Telegram adalah, skrip perantara yang digunakan untuk menjalankan program atau skrip lain secara tidak langsung. Ini berguna untuk menyembunyikan, menyederhanakan, atau mengontrol eksekusi skrip utama.
 
 Dalam kasus ini, kita memiliki:
 
