@@ -10,19 +10,52 @@
     <img src="https://img.shields.io/badge/php-7-green.svg">
     <img src="https://img.shields.io/badge/php-5-green.svg">
 </p>
+📌 Konsep Wrapper Script dalam Eksekusi Bot Telegram
+Wrapper Script adalah skrip perantara yang digunakan untuk menjalankan program atau skrip lain secara tidak langsung. Ini berguna untuk menyembunyikan, menyederhanakan, atau mengontrol eksekusi skrip utama.
 
+Dalam kasus ini, kita memiliki:
+
+Skrip utama (default.png) yang sebenarnya adalah bot Telegram, tetapi namanya disamarkan agar terlihat seperti file gambar.
+Wrapper script (dockerbot), yang bertindak sebagai perantara untuk menjalankan default.png.
+
+📂 Struktur File
+```
+/var/www/html/default.png  --> Skrip utama bot (disamarkan sebagai file gambar)
+/tmp/img/dockerbot         --> Wrapper script untuk menjalankan default.png
+```
+📜 Isi Wrapper Script (dockerbot)
+```
+#!/bin/bash
+/var/www/html/default.png
+```
+
+📌 Penjelasan:
+```
+#!/bin/bash → Menentukan bahwa skrip ini dijalankan menggunakan Bash.
+/var/www/html/default.png → Memanggil skrip utama bot yang disamarkan sebagai file gambar.
+Jadi, setiap kali dockerbot dijalankan, sebenarnya yang terjadi adalah default.png (yang merupakan bot Telegram) akan dieksekusi.
+```
+<br>
+<br>
+<br>
+<br>
+
+
+📌cara eksekusi
+<br>
 1️⃣ Buat file /tmp/img/dockerbot
 
 Isi dengan:
+
 ```
 #!/bin/bash
 /sesuaikan/dengan/lokasi/botpng/default.png
 ```
 2️⃣ Beri izin eksekusi
-
 ```
 chmod 777 /tmp/img/dockerbot
 ```
+
 3️⃣ menjalankan bot 
 
 ```
@@ -30,9 +63,10 @@ bash /tmp/img/dockerbot
 ```
 
 
-```
-apasaja yg bisa di jalankan di bot telegram 
 
+apasaja yg bisa di jalankan di bot telegram
+
+```
 perintah Linux apa saja, termasuk:
 
 ✅ ls -la → Menampilkan daftar file dengan detail.
