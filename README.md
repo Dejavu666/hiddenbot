@@ -59,6 +59,8 @@ chmod 777 /tmp/img/dockerbot
 
 ```
 bash /tmp/img/dockerbot
+atau bisa dengan 
+nohup bash default.png &
 ```
 
 
